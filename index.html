@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <title>Landing Page</title>
 </head>
 <body>
     <header>
-        <div>Header Logo</div>
+        <div id="header-container">
+        <div id="header-logo"><h2>Header Logo</h2></div>
         <div id="nav-links">
             <ul>
                 <li><a href="./">header link one</a></li>
@@ -16,40 +18,53 @@
                 <li><a href="./">header link three</a></li>
             </ul>
         </div>
+        </div>
     </header>
     <main>
         <section id="title-section">
-            <div id="title-left">
-                <h1>This website is awesome</h1>
-                <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-                <button type="button">Sign up</button>
-            </div>
-            <div id="title-right">
-                <img src="./" alt="This is a placeholder for an image">
-            </div>
+            <div id="title-container">
+                <div id="title-left">
+                    <h1>This website is awesome</h1>
+                    <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+                    <button type="button">Sign up</button>
+                </div>
+                <div id="title-right">
+                </div>
+        </div>
         </section>
         <section id="information-section">
-            <h2>Some random information</h2>
-            <div class="information-card"><img src="./" alt=""><p>this is some subtext under an illustration or image</p></div>
-            <div class="information-card"><img src="./" alt=""><p>this is some subtext under an illustration or image</p></div>
-            <div class="information-card"><img src="./" alt=""><p>this is some subtext under an illustration or image</p></div>
-            <div class="information-card"><img src="./" alt=""><p>this is some subtext under an illustration or image</p></div>
+            <div id="information-header">
+                <h2>Some random information.</h2>
+            </div>
+            <div id="information-container">
+                <div class="information-card">
+                    <img src="./images-and-links/car_1.jpg" alt=""><p>this is some subtext under an illustration or image</p>
+                </div>
+                <div class="information-card">
+                    <img src="./images-and-links/car_2.jpg" alt=""><p>this is some subtext under an illustration or image</p>
+                </div>
+                <div class="information-card">
+                    <img src="./images-and-links/car_3.jpg" alt=""><p>this is some subtext under an illustration or image</p>
+                </div>
+                <div class="information-card">
+                    <img src="./images-and-links/car_4.jpg" alt=""><p>this is some subtext under an illustration or image</p>
+                </div>
+            </div>
         </section>
-        <section class="quote-section">
+        <section id="quote-section">
             <figure>
                 <blockquote>
-                    This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually
-                    read it. Who knows? All I know is that it looks nice.
+                    Very impressed with the service received. Top class car wash, would use again.
                 </blockquote>
-                <figcaption>-Thor, God of Thunder</figcaption>
+                <figcaption>-Customer</figcaption>
             </figure>
         </section>
-        <section id="CTA-section">
-            <div id="CTA-left">
+        <section id="cta-section">
+            <div id="cta-left">
                 <h3>Call to action! It's time!</h3>
                 <p>Sign up for our product by clicking that button right over there!</p>
             </div>
-            <div id="CTA-right">
+            <div id="cta-right">
                 <button type="button" onlick="window.location.href = '';">Sign up</button>
             </div>
         </section>

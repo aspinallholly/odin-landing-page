@@ -1,0 +1,244 @@
+:root {
+    --dark-gray: #1F2937;
+    --cta-blue: #3882F6;
+    --light-grey: #E5E7EB;
+    --almost-white: #F9FAF8;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+/* Text styling */
+
+h1 {
+    font-size: 48px;
+    color: var(--almost-white);
+}
+
+h1, #information-section h2 {
+    font-weight: 800;
+}
+
+#header-logo, footer p {
+    
+    color: var(--almost-white);
+}
+
+#information-section h2, blockquote {
+    font-size: 36px;
+    color: var(--dark-gray)
+}
+
+blockquote {
+    font-style: italic;
+    font-weight: 200;
+}
+
+#nav-links a, #title-left p {
+    font-size: 18px;
+    color: var(--light-grey)
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Background colour */
+
+header, footer, #title-section {
+    background-color: var(--dark-gray)
+}
+
+button, #cta-section {
+    background-color: var(--cta-blue);
+    border-radius: 5px;
+    color: var(--almost-white);
+}
+
+#quote-section {
+    background-color: var(--light-grey);
+}
+
+/* Header/nav menu */
+
+#header-container {
+    max-width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#nav-links {
+    display: flex;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+/* Title section */
+
+#title-section {
+    min-height: 30vh;
+    display: flex;
+    padding: 5% 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-container {
+    max-width: 70vw;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 40px;
+}
+
+#title-left {
+    flex: 1;
+}
+
+#title-right {
+    flex: 1;
+    background-image: url("./images-and-links/car_main.jpg");
+    background-size: cover;
+    min-height: 350px;
+    background-position: center;
+    border-radius: 20px;
+}
+
+#title-left h1 {
+    margin-bottom: -10px;
+    margin-top: 0;
+}
+
+#title-left button {
+    padding: 5px 20px;
+    border: 1px solid var(--cta-blue);
+}
+
+/* Information section */
+
+#information-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+#information-header {
+    line-height: 0;
+}
+
+#information-container {
+    display: flex;
+    max-width: 68vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.information-card { 
+    text-align: center;
+    flex: 1;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+    gap: 20px;
+}
+
+.information-card img {
+    width: 100%;
+    max-height: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.information-card p {
+    margin: 0;
+    align-self: center;
+}
+
+/* Quote section */
+
+#quote-section {
+ padding: 50px 0;
+}
+
+#quote-section figure {
+    display: flex;
+    max-width: 58vw;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+blockquote {
+    margin: 0;
+}
+
+#quote-section figcaption {
+    align-self: flex-end;
+    padding-right: 5%;
+    padding-top: 20px;
+}
+
+/* CTA section */
+
+#cta-section {
+    max-width: 58vw;
+    min-height: 150px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#cta-left {
+    flex: 2;
+    padding-left: 5%;
+}
+
+#cta-left h3 {
+    line-height: 0;
+}
+
+#cta-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#cta-right button {
+    border: 1px solid var(--almost-white);
+    padding: 5px 20px;
+}
+/* Footer */
+
+footer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
