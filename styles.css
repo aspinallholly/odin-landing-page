@@ -46,6 +46,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--cta-blue) !important;
+}
+
 
 /* Background colour */
 
@@ -61,6 +65,12 @@ button, #cta-section {
 
 #quote-section {
     background-color: var(--light-grey);
+}
+
+button:hover {
+    background-color: var(--almost-white);
+    color: var(--cta-blue);
+    border: 1px solid var(--almost-white) !important;
 }
 
 /* Header/nav menu */
@@ -138,30 +148,27 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    padding: 40px 0 20px 0;
     gap: 20px;
 }
 
 #information-header {
-    line-height: 0;
+    line-height: 36px;
 }
 
 #information-container {
     display: flex;
-    max-width: 68vw;
+    max-width: 65vw;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     gap: 20px;
 }
 
 .information-card { 
-    text-align: center;
     flex: 1;
     width: 25%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     min-height: 200px;
     gap: 20px;
 }
@@ -178,6 +185,7 @@ li {
 .information-card p {
     margin: 0;
     align-self: center;
+    text-align: center;
 }
 
 /* Quote section */
@@ -188,7 +196,7 @@ li {
 
 #quote-section figure {
     display: flex;
-    max-width: 58vw;
+    max-width: 55vw;
     margin: 0 auto;
     flex-direction: column;
 }
@@ -199,14 +207,14 @@ blockquote {
 
 #quote-section figcaption {
     align-self: flex-end;
-    padding-right: 5%;
+    padding-right: 50px;
     padding-top: 20px;
 }
 
 /* CTA section */
 
 #cta-section {
-    max-width: 58vw;
+    max-width: 68vw;
     min-height: 150px;
     margin: 50px auto;
     display: flex;
@@ -242,3 +250,100 @@ footer {
     justify-content: center;
 }
 
+/* Mobile responsive queries */
+
+/* Medium devices - tablets etc. */
+
+@media only screen and (max-width:991px) {
+    
+    /* Header */
+
+    #nav-links a {
+        font-size: 16px;
+    }
+
+    #header-container {
+        max-width: 90vw;
+        gap: 40px;
+    }
+
+    /* Title section */
+
+
+    #title-container {
+    flex-direction: column-reverse;
+    }
+
+    #title-left {
+    min-width: 90vw;
+    text-align: center;
+    }
+
+    #title-left h1 {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+
+    #title-right {
+    min-width: 80vw;
+    }
+
+    #title-left button {
+        margin-top: 10px;
+        padding: 8px 40px;
+    }
+
+/* Information section */
+
+    #information-container {
+    min-width: 90vw;
+    }    
+
+    /* Quote section */
+    
+
+    #quote-section figure {
+    max-width: 70vw;
+    }
+
+    /* CTA section */
+
+    #cta-section {
+    max-width: 90vw;
+    }
+
+    #cta-section button {
+        padding: 8px 40px;
+    }
+
+}
+
+/* Extra queries for small devices */
+
+@media only screen and (max-width: 767px) {
+
+    /* Information section */
+
+    #information-container {
+        flex-direction: column;
+        min-width: 90vw;
+        align-items: center;
+        gap: 60px;
+        padding-bottom: 50px;
+    }
+
+    .information-card {
+        width: 90%;
+        max-height: 10%;
+    }
+    
+    .information-card img {
+        width: 80%;
+        max-height: 250px;
+        align-self: center;
+    }
+
+    .information-card p {
+        width: 80%;
+    }
+}
