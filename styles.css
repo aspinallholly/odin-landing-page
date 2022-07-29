@@ -235,10 +235,6 @@ blockquote {
     padding-left: 5%;
 }
 
-#cta-left h3 {
-    line-height: 0;
-}
-
 #cta-right {
     flex: 1;
     display: flex;
@@ -403,9 +399,16 @@ footer {
 
     #cta-section {
         flex-direction: column;
-        padding: 20px 5px;
-        max-width: 85%;
+        padding: 20px 0;
+        max-width: 90%;
+        border: 1px solid red;
+        flex-wrap: wrap;
         text-align: center;
+    }
+
+    #cta-left {
+        border: 1px solid red;
+       
     }
 
     #cta-left h3 {
