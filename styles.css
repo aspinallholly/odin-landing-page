@@ -22,9 +22,12 @@ h1, #information-section h2 {
     font-weight: 800;
 }
 
-#header-logo, footer p {
-    
+#header-logo h2 a, footer p {
     color: var(--almost-white);
+}
+
+#header-logo h2 a:hover {
+    color: var(--almost-white) !important;
 }
 
 #information-section h2, blockquote {
@@ -84,6 +87,10 @@ button:hover {
     overflow: hidden;
 }
 
+#header-container i {
+    font-size: 30px;
+}
+
 #nav-links {
     display: flex;
 }
@@ -121,6 +128,7 @@ li {
 
 #title-left {
     flex: 1;
+    flex-wrap: wrap;
 }
 
 #title-right {
@@ -250,7 +258,7 @@ footer {
     justify-content: center;
 }
 
-/* Mobile responsive queries */
+/* MOBILE RESPONSIVE */
 
 /* Medium devices - tablets etc. */
 
@@ -263,7 +271,7 @@ footer {
     }
 
     #header-container {
-        max-width: 90vw;
+        max-width: 80vw;
         gap: 40px;
     }
 
@@ -271,12 +279,12 @@ footer {
 
 
     #title-container {
-    flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
 
     #title-left {
-    min-width: 90vw;
-    text-align: center;
+        min-width: 90vw;
+        text-align: center;
     }
 
     #title-left h1 {
@@ -285,15 +293,15 @@ footer {
     }
 
     #title-right {
-    min-width: 80vw;
+        min-width: 80vw;
     }
 
     #title-left button {
         margin-top: 10px;
-        padding: 8px 40px;
+        padding: 8px 30px;
     }
 
-/* Information section */
+    /* Information section */
 
     #information-container {
     min-width: 90vw;
@@ -313,7 +321,7 @@ footer {
     }
 
     #cta-section button {
-        padding: 8px 40px;
+        padding: 8px 30px;
     }
 
 }
@@ -323,6 +331,10 @@ footer {
 @media only screen and (max-width: 767px) {
 
     /* Information section */
+
+    #information-header {
+        text-align: center;
+    }
 
     #information-container {
         flex-direction: column;
@@ -345,5 +357,58 @@ footer {
 
     .information-card p {
         width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Header */
+
+    #header-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #header-logo h2 {
+        font-size: 30px;      
+    }
+
+    #nav-links a {
+        font-size: 16px;
+    }
+
+    /* Quote section */
+
+    blockquote {
+        font-size: 24px;
+    }
+
+    #quote-section figcaption {
+        padding-right: 20px;
+    }
+
+    /* Information section */
+
+    #information-section h2 {
+        font-size: 30px;
+    }
+
+    .information-card img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /* CTA section */
+
+    #cta-section {
+        flex-direction: column;
+        padding: 20px 5px;
+        max-width: 85%;
+        text-align: center;
+    }
+
+    #cta-left h3 {
+        padding-bottom: 12px;
     }
 }
